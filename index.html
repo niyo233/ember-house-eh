@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember House — Modern American Chophouse</title>
+    <meta
+      name="description"
+      content="Ember House is a modern American chophouse built around live-fire cooking, seasonal ingredients, and an unhurried table."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAV ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#top" class="wordmark">Ember House</a>
+
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="#philosophy">Philosophy</a>
+          <a href="#kitchen">The Kitchen</a>
+          <a href="#tasting-menu">Tasting Menu</a>
+          <a href="#reserve">Reserve</a>
+          <a href="#find-us">Find Us</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span>Menu</span>
+          <span class="toggle-lines"><i></i><i></i></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== FULLSCREEN NAV OVERLAY ===== -->
+    <nav class="nav-overlay" id="site-nav">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#kitchen">The Kitchen</a></li>
+        <li><a href="#tasting-menu">Tasting Menu</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#find-us">Find Us</a></li>
+      </ul>
+      <p class="nav-overlay-meta">
+        123 Gourmet Avenue, Downtown — New York, NY
+      </p>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <img
+          src="images/banner.jpg"
+          alt="Dining room at Ember House, set tables and warm light"
+          width="1536"
+          height="1072"
+        />
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Modern American Chophouse — Est. 2015</p>
+        <h1 class="hero-title">
+          <span>Ember</span>
+          <span class="hero-title-outline">House</span>
+        </h1>
+        <div class="hero-foot">
+          <div class="hero-foot-left">
+            <p class="hero-tagline">
+              Live-fire cooking. Seasonal ingredients. An unhurried table.
+            </p>
+            <p class="hero-hours">Open Today — 5:00 PM – 11:00 PM</p>
+          </div>
+          <div class="hero-links">
+            <a href="#reserve" class="text-link"
+              >Reserve a Table <span>→</span></a
+            >
+            <a href="#tasting-menu" class="text-link"
+              >View the Menu <span>→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PHILOSOPHY STRIP ===== -->
+    <section class="philosophy" id="philosophy">
+      <p class="philosophy-eyebrow">Our Philosophy</p>
+      <p class="philosophy-statement">
+        We cook over fire because it forces honesty — no shortcuts, no
+        over-engineering. Just good ingredients, close attention, and the
+        patience to let them speak.
+      </p>
+    </section>
+
+    <!-- ===== KITCHEN / STORY ===== -->
+    <section class="kitchen" id="kitchen">
+      <div class="kitchen-media">
+        <img
+          src="images/story.jpg"
+          alt="Chef plating a dish in the Ember House kitchen"
+          width="592"
+          height="800"
+        />
+      </div>
+      <div class="kitchen-copy">
+        <p class="eyebrow">In the Kitchen</p>
+        <h2>Every plate starts with the fire.</h2>
+        <p class="kitchen-text">
+          Our kitchen is built around a single wood-fired hearth — every
+          protein, most vegetables, even some of our desserts pass through it.
+          It's a slower way to cook, and it shows: char where it belongs,
+          restraint everywhere else.
+        </p>
+        <p class="kitchen-quote">
+          "We're not chasing trends. We're chasing the best version of a few
+          things, cooked properly."
+        </p>
+        <p class="kitchen-signature">— Executive Chef, Ember House</p>
+      </div>
+    </section>
+
+    <!-- ===== TASTING MENU ===== -->
+    <section class="tasting-menu" id="tasting-menu">
+      <div class="tasting-menu-head">
+        <p class="eyebrow eyebrow-on-dark">Tasting Menu</p>
+        <h2>Six courses, one fire.</h2>
+      </div>
+
+      <ol class="dish-list">
+        <li class="dish">
+          <span class="dish-index">01</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-1.jpg"
+              alt="Seared scallops with pea purée"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Charred Scallops</h3>
+              <span class="dish-price">$32</span>
+            </div>
+            <p>
+              Hearth-seared scallops, pea purée, crisped pancetta, brown butter.
+            </p>
+          </div>
+        </li>
+
+        <li class="dish dish-reverse">
+          <span class="dish-index">02</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-2.jpg"
+              alt="Beef Wellington with roasted carrots"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Beef Wellington</h3>
+              <span class="dish-price">$48</span>
+            </div>
+            <p>
+              Prime fillet, mushroom duxelles, prosciutto, puff pastry, red wine
+              jus.
+            </p>
+          </div>
+        </li>
+
+        <li class="dish">
+          <span class="dish-index">03</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-3.jpg"
+              alt="Lobster risotto with saffron"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Lobster Risotto</h3>
+              <span class="dish-price">$38</span>
+            </div>
+            <p>
+              Carnaroli rice, butter-poached lobster, saffron, aged parmesan.
+            </p>
+          </div>
+        </li>
+
+        <li class="dish dish-reverse">
+          <span class="dish-index">04</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-4.jpg"
+              alt="Sliced duck breast with cherry sauce"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Hearth Duck Breast</h3>
+              <span class="dish-price">$36</span>
+            </div>
+            <p>
+              Fire-roasted duck, celeriac purée, charred cherries, port
+              reduction.
+            </p>
+          </div>
+        </li>
+
+        <li class="dish">
+          <span class="dish-index">05</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-5.jpg"
+              alt="Chocolate soufflé with vanilla cream"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Dark Chocolate Soufflé</h3>
+              <span class="dish-price">$16</span>
+            </div>
+            <p>Valrhona chocolate, vanilla bean cream, salted caramel.</p>
+          </div>
+        </li>
+
+        <li class="dish dish-reverse">
+          <span class="dish-index">06</span>
+          <div class="dish-media">
+            <img
+              src="images/meal-6.jpg"
+              alt="Crème brûlée with fresh berries"
+              loading="lazy"
+              width="768"
+              height="512"
+            />
+          </div>
+          <div class="dish-copy">
+            <div class="dish-heading">
+              <h3>Crème Brûlée</h3>
+              <span class="dish-price">$14</span>
+            </div>
+            <p>
+              Tahitian vanilla custard, caramelized crust, seasonal berries.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== RESERVE ===== -->
+    <section class="reserve" id="reserve">
+      <div class="reserve-inner">
+        <div class="reserve-intro">
+          <p class="eyebrow">Reserve</p>
+          <h2>Save your table.</h2>
+          <p class="reserve-text">
+            Parties of 8 or more, please call us directly at (212) 555-1234.
+          </p>
+        </div>
+
+        <form class="reserve-form" id="reserve-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="r-name">Name</label>
+              <input
+                type="text"
+                id="r-name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="r-guests">Guests</label>
+              <input
+                type="number"
+                id="r-guests"
+                name="guests"
+                min="1"
+                max="8"
+                placeholder="2"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="r-date">Date</label>
+              <input type="date" id="r-date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="r-time">Time</label>
+              <select id="r-time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="r-contact">Email or Phone</label>
+            <input
+              type="text"
+              id="r-contact"
+              name="contact"
+              placeholder="How should we reach you?"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-gold">Confirm Reservation</button>
+          <p
+            class="form-status"
+            id="reserve-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FIND US ===== -->
+    <section class="find-us" id="find-us">
+      <div class="find-us-inner">
+        <div class="find-us-copy">
+          <p class="eyebrow eyebrow-on-dark">Find Us</p>
+          <h2>123 Gourmet Avenue<br />Downtown, New York, NY 10001</h2>
+
+          <ul class="hours-list">
+            <li><span>Mon</span><span>Closed</span></li>
+            <li><span>Tue – Thu</span><span>5:00 PM – 10:00 PM</span></li>
+            <li><span>Fri – Sat</span><span>5:00 PM – 11:00 PM</span></li>
+            <li><span>Sun</span><span>5:00 PM – 9:00 PM</span></li>
+          </ul>
+
+          <p class="find-us-contact">
+            (212) 555-1234 &nbsp;·&nbsp; hello@emberhouse.nyc
+          </p>
+        </div>
+
+        <div class="find-us-map">
+          <img
+            src="images/map.jpg"
+            alt="Map showing Ember House location in downtown New York"
+            loading="lazy"
+            width="640"
+            height="426"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <a href="#top" class="wordmark footer-wordmark">Ember House</a>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+      <p class="footer-copy">© 2026 Ember House. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
